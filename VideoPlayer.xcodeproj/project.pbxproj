@@ -13,6 +13,12 @@
 		EDF76EF6247C5CDB0008508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF76EF4247C5CDB0008508B /* Main.storyboard */; };
 		EDF76EF8247C5CDE0008508B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF76EF7247C5CDE0008508B /* Assets.xcassets */; };
 		EDF76EFB247C5CDE0008508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF76EF9247C5CDE0008508B /* LaunchScreen.storyboard */; };
+		EDF76F05247C5D220008508B /* catwalk.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EDF76F03247C5D220008508B /* catwalk.mp4 */; };
+		EDF76F06247C5D220008508B /* gym.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EDF76F04247C5D220008508B /* gym.mp4 */; };
+		EDF76F09247C64340008508B /* StandardVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF76F08247C64340008508B /* StandardVideoPlayerViewController.swift */; };
+		EDF76F0B247C6A060008508B /* EmbeddedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF76F0A247C6A060008508B /* EmbeddedVideoViewController.swift */; };
+		EDF76F0D247C6B0F0008508B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF76F0C247C6B0F0008508B /* Player.swift */; };
+		EDF76F11247C70960008508B /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF76F10247C70960008508B /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		EDF76EF7247C5CDE0008508B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDF76EFA247C5CDE0008508B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDF76EFC247C5CDE0008508B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF76F03247C5D220008508B /* catwalk.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = catwalk.mp4; sourceTree = "<group>"; };
+		EDF76F04247C5D220008508B /* gym.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gym.mp4; sourceTree = "<group>"; };
+		EDF76F08247C64340008508B /* StandardVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		EDF76F0A247C6A060008508B /* EmbeddedVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedVideoViewController.swift; sourceTree = "<group>"; };
+		EDF76F0C247C6B0F0008508B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EDF76F10247C70960008508B /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,50 @@
 				EDF76EEE247C5CDB0008508B /* AppDelegate.swift */,
 				EDF76EF0247C5CDB0008508B /* SceneDelegate.swift */,
 				EDF76EF2247C5CDB0008508B /* ViewController.swift */,
+				EDF76F0F247C70780008508B /* Views */,
+				EDF76F0E247C70690008508B /* Model */,
+				EDF76F07247C641B0008508B /* Controllers */,
+				EDF76F02247C5D0A0008508B /* Videos */,
 				EDF76EF4247C5CDB0008508B /* Main.storyboard */,
 				EDF76EF7247C5CDE0008508B /* Assets.xcassets */,
 				EDF76EF9247C5CDE0008508B /* LaunchScreen.storyboard */,
 				EDF76EFC247C5CDE0008508B /* Info.plist */,
 			);
 			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		EDF76F02247C5D0A0008508B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				EDF76F03247C5D220008508B /* catwalk.mp4 */,
+				EDF76F04247C5D220008508B /* gym.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		EDF76F07247C641B0008508B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDF76F08247C64340008508B /* StandardVideoPlayerViewController.swift */,
+				EDF76F0A247C6A060008508B /* EmbeddedVideoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDF76F0E247C70690008508B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDF76F0C247C6B0F0008508B /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDF76F0F247C70780008508B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDF76F10247C70960008508B /* VideoPlayer.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF76EFB247C5CDE0008508B /* LaunchScreen.storyboard in Resources */,
+				EDF76F05247C5D220008508B /* catwalk.mp4 in Resources */,
+				EDF76F06247C5D220008508B /* gym.mp4 in Resources */,
 				EDF76EF8247C5CDE0008508B /* Assets.xcassets in Resources */,
 				EDF76EF6247C5CDB0008508B /* Main.storyboard in Resources */,
 			);
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF76F0B247C6A060008508B /* EmbeddedVideoViewController.swift in Sources */,
 				EDF76EF3247C5CDB0008508B /* ViewController.swift in Sources */,
+				EDF76F11247C70960008508B /* VideoPlayer.swift in Sources */,
 				EDF76EEF247C5CDB0008508B /* AppDelegate.swift in Sources */,
+				EDF76F09247C64340008508B /* StandardVideoPlayerViewController.swift in Sources */,
+				EDF76F0D247C6B0F0008508B /* Player.swift in Sources */,
 				EDF76EF1247C5CDB0008508B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
